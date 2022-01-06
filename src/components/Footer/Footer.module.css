@@ -1,0 +1,18 @@
+.footerContainer {
+  height: 64px;
+
+  background: #00527a;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+}

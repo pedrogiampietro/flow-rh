@@ -1,4 +1,4 @@
-import { Container } from '../../Layout';
+import { Container } from '../Layout';
 
 export function Login() {
   return (
