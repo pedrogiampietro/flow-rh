@@ -170,8 +170,8 @@ input:focus ~ .highlight {
 }
 
 .loginButton {
-  background-color: #5264ae;
-  width: 180px;
+  background-color: #e0e0e0;
+  width: 100%;
   height: 40px;
 
   border: none;
@@ -182,10 +182,11 @@ input:focus ~ .highlight {
   font-family: 'Sarala', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #fff;
+  color: #aa9d9d;
 }
 
 .loginButton:hover {
-  opacity: 0.6;
+  background-color: #ffa12d;
+  color: #fff;
   transition: 0.3s;
 }
