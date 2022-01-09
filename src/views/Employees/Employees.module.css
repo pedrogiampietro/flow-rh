@@ -1,7 +1,6 @@
 .employeesPainelBody {
   width: 1000px;
-  height: 480px;
-
+  height: 760px;
   background: #ffffff;
 
   display: block;
@@ -216,4 +215,39 @@ input:focus ~ .highlight {
   background-color: #ffa12d !important;
   color: #fff;
   transition: 0.3s;
+}
+
+.employeesBack,
+.employeesCreate,
+.employeesClose {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #ffa12d;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td:last-child {
+  width: 120px;
 }

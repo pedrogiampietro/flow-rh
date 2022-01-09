@@ -3,16 +3,19 @@
 
   background: #00527a;
 
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
+  bottom: 0;
 }
 
 .footerTitle {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  text-align: center;
+
+  transform: translateY(-50%);
 
   color: #fff;
 }

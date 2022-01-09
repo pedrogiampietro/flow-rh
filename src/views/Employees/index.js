@@ -17,7 +17,7 @@ export function Employees() {
           <span className={styles.employeesCreate}>
             <AiFillPlusCircle size={24} />
           </span>
-          <span>
+          <span className={styles.employeesClose}>
             <AiOutlineClose size={24} />
           </span>
         </div>
@@ -80,6 +80,27 @@ export function Employees() {
             <MdPersonSearch size={30} />
           </button>
         </fieldset>
+
+        <section>
+          <h4>Resultados da busca...</h4>
+
+          <table>
+            <tr>
+              <th>Matricula</th>
+              <th>Nº do Documento</th>
+              <th>Nome</th>
+              <th>Data de Nascimento</th>
+              <th>Actions</th>
+            </tr>
+            <tr>
+              <td>219412</td>
+              <td>223808801</td>
+              <td>Pedro Henrique Giampietro</td>
+              <td>10/10/1994</td>
+              <td>Tres bolinhas, dropdown</td>
+            </tr>
+          </table>
+        </section>
       </div>
     </Container>
   );
