@@ -1,10 +1,13 @@
 .employeesPainelBody {
   width: 1000px;
-  height: 760px;
+  height: 100vh;
+
   background: #ffffff;
 
+  border-radius: 15px;
+
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
 }
 
 .employeesPainelReturn {
@@ -14,10 +17,12 @@
   gap: 150px;
   flex-direction: row;
 
+  width: 1000px;
+
   background: #85a0ab;
   color: #fff;
 
-  margin: 10px;
+  margin: 60px auto 10px auto;
 }
 
 .employeesCreate {
@@ -223,7 +228,13 @@ input:focus ~ .highlight {
   cursor: pointer;
 }
 
-table {
+.titleResults {
+  display: flex;
+  width: 95%;
+  margin-left: auto;
+}
+
+.table {
   border-collapse: collapse;
   width: 90%;
   margin: auto;
@@ -244,10 +255,55 @@ th {
   color: white;
 }
 
-table {
-  border-collapse: collapse;
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: relative;
 }
 
-td:last-child {
-  width: 120px;
+.toggleThumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #475569;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.toggleThumb:before {
+  content: '';
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  transition: 0.4s all ease;
+}
+
+.checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox:checked + .toggleThumb:before {
+  transform: translateX(26px);
+}
+
+.buttonActionEdit {
+  text-align: center;
+  vertical-align: middle;
+
+  position: relative;
+  top: 5px;
+  left: 10px;
+  margin: 0 5px 0 5px;
 }
