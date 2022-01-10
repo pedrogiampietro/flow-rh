@@ -1,13 +1,6 @@
-import { Login } from './components/Login';
-import { Home } from './components/Home';
-import { Employees } from './views/Employees';
+import React from 'react';
+import { Routes } from './routes';
 
 export function App() {
-  return (
-    <body>
-      <Employees />
-      {/* <Home /> */}
-      {/* <Login /> */}
-    </body>
-  );
+  return <Routes />;
 }
