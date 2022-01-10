@@ -3,10 +3,10 @@ import { Footer } from '../Footer';
 
 export function Container({ children }) {
   return (
-    <>
+    <div className="container">
       <Header />
-      {children}
+      <div className="main">{children}</div>
       <Footer />
-    </>
+    </div>
   );
 }

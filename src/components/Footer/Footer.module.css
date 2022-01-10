@@ -1,21 +1,16 @@
 .footerContainer {
-  height: 64px;
-
   background: #00527a;
+  color: #fff;
 
-  position: relative;
-  width: 100%;
-  bottom: 0;
+  flex-basis: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footerTitle {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  text-align: center;
-
-  transform: translateY(-50%);
-
+  display: block;
+  margin: 0 auto;
   color: #fff;
 }

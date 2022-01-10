@@ -1,20 +1,24 @@
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
+html,
 body {
   margin: 0;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
+  padding: 0;
 
   background: #f0f0f0;
 }
 
-main {
-  display: block;
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background: green;
+}
+
+.main {
+  background-color: #eee;
+  flex: 1;
+
+  -ms-flex: 1 1 auto; /*needs both shrink and grow*/
 }
 
 h1 {
