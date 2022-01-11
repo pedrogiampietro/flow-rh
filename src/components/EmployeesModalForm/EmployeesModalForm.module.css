@@ -47,6 +47,12 @@
   border: none;
 }
 
+.modalCloseButton:hover {
+  background-color: #ffa12d;
+  color: #fff;
+  transition: 0.3s;
+}
+
 .headerModalTitle {
   width: 80%;
   height: 50px;
@@ -237,6 +243,38 @@ input:focus ~ .highlight {
 
 .searchButton:hover {
   background-color: #ffa12d !important;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* fim modal search */
+
+div.center {
+  text-align: center;
+}
+
+.modalButton {
+  background-color: #e0e0e0;
+
+  height: 40px;
+  width: 200px;
+  margin-right: 20px;
+
+  border: 1px solid #a2a1a1;
+  border-radius: 10px;
+
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #aa9d9d;
+
+  cursor: pointer;
+}
+
+.modalButton:hover {
+  background-color: #ffa12d;
   color: #fff;
   transition: 0.3s;
 }

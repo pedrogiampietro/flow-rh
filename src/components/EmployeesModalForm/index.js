@@ -67,6 +67,12 @@ const EmployeesModalForm = ({ isShowing, hide }) =>
                   <MdPersonSearch size={30} />
                 </button>
               </fieldset>
+              <div className={styles.center}>
+                <button className={styles.modalButton}>
+                  Salvar Alterações
+                </button>
+                <button className={styles.modalButton}>Cancelar</button>
+              </div>
             </div>
           </div>
         </>,
