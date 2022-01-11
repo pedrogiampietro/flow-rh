@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import { Container } from '../../components/Layout';
 import { BsArrowLeft } from 'react-icons/bs';
 import {
@@ -10,27 +8,30 @@ import {
 } from 'react-icons/ai';
 import { MdPersonSearch } from 'react-icons/md';
 
-import { EmployeesModalForm } from '../../components/EmployeesModalForm';
+import EmployeesModalForm from '../../components/EmployeesModalForm';
+import useModal from '../../hooks/useModal';
 
 import styles from './Employees.module.css';
 
 export function Employees() {
-  const [show, setShow] = useState(false);
+  const { isShowing, toggle } = useModal();
 
   return (
     <Container>
       <div className={styles.employeesPainelReturn}>
-        <span className={styles.employeesBack}>
+        <span>
           <BsArrowLeft size={24} />
         </span>
         <h4>Lista de Funcionarios</h4>
-        <span className={styles.employeesCreate}>
-          <AiFillPlusCircle size={24} />
+        <span>
+          <AiFillPlusCircle size={24} onClick={toggle} />
         </span>
-        <span className={styles.employeesClose}>
+        <span>
           <AiOutlineClose size={24} />
         </span>
       </div>
+
+      <EmployeesModalForm isShowing={isShowing} hide={toggle} />
 
       <div className={styles.employeesSearchMethod}>
         <div className={styles.employeesSearchGroup}>
@@ -180,7 +181,7 @@ export function Employees() {
             </tr>
           </table>
 
-          <div className={styles.center}>
+          {/* <div className={styles.center}>
             <ul className={styles.pagination}>
               <li>
                 <a href="#">«</a>
@@ -212,7 +213,7 @@ export function Employees() {
                 <a href="#">»</a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </section>
       </div>
     </Container>
